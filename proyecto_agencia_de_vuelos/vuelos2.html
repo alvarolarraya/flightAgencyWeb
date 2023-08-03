@@ -1,0 +1,52 @@
+##header##
+<body style="background: hsl(240, 73%, 70%);">
+    <form class="text-center" style = "margin-top: 20px;"method="post" action = "index.php?accion=buscar&id=1">
+        <input  type="origen" name="origen" placeholder="Ciudad origen" required>
+        <input  type="destino" name="destino"placeholder="Ciudad destino"required>
+        Fecha:
+        <select name= "fechadia"  aria-label="Default select example">
+              <option selected value = "0">Selecciona el dia</option>
+              ##selectdias##
+              <option value="##dia##">##dia##</option>
+              ##selectdias##
+        </select>
+        <select name = "fechames" aria-label="Default select example">
+              <option selected value = "0">Selecciona el mes</option>
+              ##selectmeses##
+              <option value="##mes##">##mes##</option>
+              ##selectmeses##
+        </select>
+        <select name = "fechaaño"  aria-label="Default select example">
+              <option selected value = "0">Selecciona el año</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+        </select>
+        <button style="color: #ffffff;font-family: 'Alegreya SC', serif;font-size: 18px;background: linear-gradient(158deg, black 43%, var(--bs-blue) 100%);" type="submit">Buscar</button>
+    </form>
+    <h2 style="text-align: center;margin-top: 20px;">Lista de Vuelos</h2>
+        <div style="min-height:100vh;" class="table-responsive">
+            <table class="table" style = "color:rgb(0, 0, 0)">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>Fecha</th>
+                        <th>Precio (euros)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                ##fila##
+                    <tr>
+                        <td></td>
+                        <td>##origen##</td>
+                        <td>##destino##</td>
+                        <td>##fecha##</td>
+                        <td>##precio##</td>
+                    </tr>
+                ##fila##
+                </tbody>
+            </table>
+        </div>
+</body>
+##footer##

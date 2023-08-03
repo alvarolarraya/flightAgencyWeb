@@ -1,0 +1,60 @@
+##header##
+<body style="background: hsl(240, 73%, 70%)">
+    <div style="min-height:100vh;" class="container profile profile-view" id="profile">
+        <form>
+            <div class="row profile-row">
+                <div class="col-md-4 relative">
+                    <div class="avatar">
+                        <div class="col-md-6" style="height: 182px;width: 213px;margin-right: -207px;"><img class="rounded-circle" style="border-radius: -50px;width: 150px;height: 150px;margin: 26px;" src="https://c0.klipartz.com/pngpicture/507/702/gratis-png-icono-de-perfil-icono-de-usuario-simple.png"></div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h1 style="color: rgb(0,0,0);">Mi cuenta </h1>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group mb-3"><label class="form-label" style="color: rgb(0,0,0);font-weight: bold;">Nombre </label></div>
+                            <p style="color: rgb(0,0,0);">##nombre##</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group mb-3"><label class="form-label" style="color: rgb(0,0,0);font-weight: bold;">Apellido </label></div>
+                            <p style="color: rgb(0,0,0);">##apellido##</p>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3"><label class="form-label" style="color: rgb(0,0,0);font-weight: bold;">Usuario </label>
+                        <p style="color: rgb(0,0,0);">##usuario##</p>
+                    </div>
+                    <hr>
+                </div>
+                <h4 style="text-align: center;margin-top: 20px; color:black">Mis reservas</h4>
+                <div class="table-responsive">
+                    <table class="table" style = "color:black">
+                        <thead>
+                            <tr>
+                                <th>Origen</th>
+                                <th>Destino</th>
+                                <th>Fecha</th>
+                                <th>Cantidad</th>
+                                <th>Precio total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ##fila##
+                                <tr id="##idFactura##">
+                                    <td>##origen##</td>
+                                    <td>##destino##</td>
+                                    <td>##fecha##</td>
+                                    <td>##cantidad##</td>
+                                    <td>##precioTotal##</td>
+                                    <td><a onclick="exportPDF('##idFactura##')" class="btn btn-light action-button" role="button" style="color: #ffffff;font-family: 'Alegreya SC', serif;font-size: 18px;background: linear-gradient(158deg, black 43%, var(--bs-blue) 100%);">Factura</a></td>
+                                </tr>
+                            ##fila##
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+##footer##
